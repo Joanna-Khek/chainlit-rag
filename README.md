@@ -23,6 +23,9 @@ Data Helper is a bot that enables users to inquire about the content of a webpag
 6. Feed these similar vectors into the large language model's prompt template as additional context, along withh the user's query.
 
 ## Demo
+
+![Demo](https://github.com/Joanna-Khek/chainlit-rag/blob/main/static/demo_gif.gif)
+
 In this demo, I supplied the last of us fandom wiki page to the bot. ``https://thelastofus.fandom.com/wiki/The_Last_of_Us_Part_II``. I then asked the question ``How did Joel die?``. I asked it to return 6 most similar chunks and fed it to the prompt template as additional context.
 
 The prompt fed to the LLM is shown below
@@ -30,8 +33,6 @@ The prompt fed to the LLM is shown below
 ![context](https://github.com/Joanna-Khek/chainlit-rag/blob/main/static/context_example.png)
 
 The Chainlit framework was employed to create a user interface, allowing users to input their queries.
-
-![Demo](https://github.com/Joanna-Khek/chainlit-rag/blob/main/static/demo_gif.gif)
 
 ## Future Work
 I've noticed that parameters like chunk size, chunk overlap, and the prompt template significantly impact the generated output. I intend to conduct experiments with various parameters to improve the output further.
