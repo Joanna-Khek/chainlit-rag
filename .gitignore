@@ -1,0 +1,6 @@
+*.ipynb
+.chainlit
+.files
+.venv
+.env
+__pycache__
