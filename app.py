@@ -38,10 +38,7 @@ def load_llm():
         streamer=streamer,
         max_new_tokens=150
     )
-    # model = AutoModelForCausalLM.from_pretrained(model,
-    #                                              quantization_config=quantization_config)
-    
-    #pipe = pipeline("text-generation", model=model, tokenizer=tokenizer, max_new_tokens=150)
+
     llm = HuggingFacePipeline(pipeline=pipe)
 
     return llm
