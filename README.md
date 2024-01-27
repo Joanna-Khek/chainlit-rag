@@ -20,7 +20,7 @@ Data Helper is a bot that enables users to inquire about the content of a webpag
 3. Obtain a vector representation for each chunk using Cohere's embedding model.
 4. Store these vectors into a vector store (e.g Chroma DB)
 5. Compare the vector representation of the user's input (query) with all vectors in the vector store. Retrieve the top few similar vectors.
-6. Feed these similar vectors into the large language model's prompt template as additional context, along withh the user's query.
+6. Feed these similar vectors into the large language model's prompt template as additional context, along with the user's query.
 
 ## Demo
 
